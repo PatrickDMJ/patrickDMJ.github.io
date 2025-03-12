@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(231, 205, 198);
+    background-color: rgb(228, 204, 200);
     height: 100%;
 }
 
@@ -23,7 +23,9 @@ header{
     top: 30px;
     position: relative;
 }
-
+#show-links{
+    font-size: x-large;
+}
 .middle-container{
 width:50%;
 min-height: 100vh;
@@ -91,7 +93,9 @@ li{
 a{
     color: rgb(3, 4, 61);
 }
-
+p{
+    font-size: large;
+}
 .about-this-page{
     width:60%;
     align-items: left;
@@ -110,16 +114,24 @@ a{
     opacity: 1;
 }
 
-#about-me img {
-    width: 50%; /* Adjust width as needed */
-    height: auto; /* Maintain aspect ratio */
-    opacity: 0.5; /* Semi-transparent by default */
-    transition: opacity 0.3s ease-in-out; /* Smooth transition effect */
+.image-container {
+    display: flex;
+    justify-content: left;
+    gap: 20px; /* Spacing between images */
+    border-radius: 10%;
+    object-fit: cover;
+    top: 20px;
 }
 
-/* Hover effect */
-#about-me img:hover {
-    opacity: 1; /* Fully visible on hover */
+.image-container img {
+    width: 300px; /* Ensures equal width */
+    height: 300px; /* Ensures equal height */
+    object-fit: cover;
+    border-radius: 10%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.image-container img:hover {
     transform: scale(1.1);
 }
 
@@ -128,11 +140,10 @@ a{
     position: absolute;
     right: 5px; /* Adjust position to the right */
     top: 10px;
-    background-color: rgb(225, 233, 240);
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px; /* Adjust width as needed */
+    width: 230px; /* Adjust width as needed */
 }
 
 #assignment-links ul {
@@ -145,25 +156,34 @@ a{
 #assignment-links li {
     margin-bottom: 5px;
     text-align: left;
+    padding: 5;
+    margin: 5;
     display: block
+}
+
+#assignment-links li:hover {
+    text-align: left;
+    justify-content: left;
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
 }
 
 .hidden {
     display: none;
 }
 
-.image-container {
+.qr-container {
     display: flex;
-    justify-content: center;
-    gap: 20px; /* Spacing between images */
-    border-radius: 10%;
-    object-fit: cover;
-    top: 20px;
+    justify-content: flex-end;  /* Align to the right */
+    gap: 20px;  /* Optional: space between QR image and other elements if any */
+    top: 20px;  /* Adjust the positioning as necessary */
+    position: relative;  /* Ensure the positioning works correctly */
 }
 
-.image-container img {
-    width: 20%;
-    height: 20%;
-    object-fit: cover;
-    border-radius: 10%;
+.qr-container img {
+    width: 100px;  /* Adjust this size as needed */
+    height: 100px;  /* Maintain aspect ratio or adjust */
+    object-fit: cover;  /* Ensures the image scales correctly */
+    border-radius: 10%;  /* Optional: rounded corners */
+    transition: transform 0.3s ease-in-out;
 }
