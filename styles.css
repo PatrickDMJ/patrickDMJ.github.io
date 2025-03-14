@@ -19,154 +19,146 @@ h3{
     font-family: monospace;
 }
 
-header{
-    top: 30px;
-    position: relative;
-}
-#show-links{
-    font-size: x-large;
-}
-.middle-container{
-width:50%;
-min-height: 100vh;
-align-items: center;
-background-color: rgb(225, 233, 240);
-margin: 0 auto; /*aling in the middle*/
-border-radius: 20px; /*rounded corner*/
-overflow: hidden; /*hidden overflow*/
-position: relative;
-}
-
-.sub-middle-container{
-    width: 100%;
-    height: 100%;
-    left: 100px;
-    position: relative;
-}
-
-#info{
-    top: 120px;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-
-
-.banner{
-top: 50px;
-height: 200px;
-align-items: center;
-background-color: rgb(3, 4, 61);
-position: relative;
-border-radius: 10px; /*rounded corner*/
-overflow: hidden; /*hidden overflow*/
-}
-
-.profile-pic {
-    width: 200px; /* Adjust as needed */
-    height: 200px; /* Same as width for a perfect circle */
-    border-radius: 50%;
-    object-fit: cover; /* Ensures the image fills the circle */
-    position: absolute;
-    top: -100px;
-    left: 20px;
-}
-
-
-nav{
-    display: flex;
-    justify-content: space-between;
-    justify-content: right;
-    position: relative;
-    top: 30px;
-}
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-li{
-    margin-right: 20px;
-}
 a{
     color: rgb(3, 4, 61);
 }
 p{
     font-size: large;
 }
-.about-this-page{
-    width:60%;
-    align-items: left;
+
+.middle-container{
+    display:flex;
+    min-width: 50%;
+    min-height: 60%;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    position: relative;
+    margin: 0 auto;
+    width:70%;
+    background-color: rgb(228, 221, 215);
+    border-radius: 20px; /*rounded corner*/
+    overflow: hidden; /*hidden overflow*/
+    
 }
 
-#about-me{
+
+.nav{
+    display: flex;
+    justify-content: right;
+    padding:1%;
+    height: 2%;
+    /*background-color: aquamarine;*/
+}
+
+.banner{
+    height: 20%;
+    align-items: center;
+    background-color: rgb(25, 25, 26);
+    position: relative;
+    border-radius: 10px; /*rounded corner*/
+    overflow: hidden; /*hidden overflow*/
+}
+
+.profile-pic {
+    width: 200px; /* Adjust as needed */
+    height:200px; /* Same as width for a perfect circle */
+    border-radius: 50%;
+    object-fit:cover;/* Ensures the image fills the circle */
+    top: -10%;
+    left: 2%;
+    position: relative;
+}
+
+.sub-middle-container{
+    width: 100%;
+    top: -10%;
+    left: 5%;
+    position: relative;
+}
+
+#info-conntainer{
+    display: flex;
+    width: 100%;
+}
+
+#info-container > div{
+    width:50%;
+}
+
+#show-links{
+    font-size: x-large;
+}
+
+
+.about-this-page{
+    width: 60%;
+    height:fit-content;
+}
+
+#assignment-links {
+    display: none; /* Initially hidden */
+    width: 30%;
+    padding: 2% 0 0 10%;
+    border-radius: 10px;
+}
+
+#assignment-links ul {
+    list-style:none;
+}
+
+#assignment-links li:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+/*#about-me{
     visibility: hidden;
     opacity: 0;
-    width: 60%;
     transition: opacity 0.5s ease-in-out;
-}
+    background-color: aqua;
+}*/
 
-#about-me.visible {
-    visibility: visible;
+#about-me{
     width: 60%;
-    opacity: 1;
 }
 
-.image-container {
+.image-container{
     display: flex;
-    justify-content: left;
+    width:100%; /* Ensures equal width */
+    height:100%; /* Ensures equal height */
     gap: 20px; /* Spacing between images */
-    border-radius: 10%;
-    object-fit: cover;
-    top: 20px;
 }
 
-.image-container img {
+.image-container > img{
+    width: 50%;
+   
+}  
+
+.image-container img{
     width: 300px; /* Ensures equal width */
     height: 300px; /* Ensures equal height */
     object-fit: cover;
     border-radius: 10%;
     transition: transform 0.3s ease-in-out;
+    background-color:aqua;
+}
+
+.werwer{
+    display: flex;
+    justify-content: left;
+    
+    border-radius: 10%;
+    object-fit: cover;
+
+    
 }
 
 .image-container img:hover {
     transform: scale(1.1);
 }
 
-#assignment-links {
-    display: none; /* Initially hidden */
-    position: absolute;
-    right: 5px; /* Adjust position to the right */
-    top: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    width: 230px; /* Adjust width as needed */
-}
 
-#assignment-links ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: block
-}
-
-#assignment-links li {
-    margin-bottom: 5px;
-    text-align: left;
-    padding: 5;
-    margin: 5;
-    display: block
-}
-
-#assignment-links li:hover {
-    text-align: left;
-    justify-content: left;
-    transition: transform 0.3s ease-in-out;
-    transform: scale(1.1);
-}
 
 .hidden {
     display: none;

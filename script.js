@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     const aboutMeLink = document.getElementById("about-me-link");
     const aboutMeSection = document.getElementById("about-me");
 
@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function() {
         // Toggle the 'visible' class
         aboutMeSection.classList.toggle("visible");
     });
-});
+});*/
 
 document.addEventListener("DOMContentLoaded", function() {
     const showLinks = document.getElementById("show-links");
